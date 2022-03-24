@@ -33,7 +33,7 @@ function devolverString(str)
   return str;
 
   }
-  devolverString = 'Henry';// "hola Henry"
+  
   
 
 
@@ -201,15 +201,18 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero>0){
-    var a = 'Es positivo';
+  if (numero===0){
+    var a = false;
     return a;
   }
-  var b = 'Es negativo';
-  return b;
-  if (numero === 0){
-    return false;
+  else if (numero>0){
+    return "Es positivo";
   }
+  else {
+    return "Es negativo";
+  }
+
+  
 }esPositivo(3); //"Es positivo"
 
 function agregarSimboloExclamacion(str) {
@@ -224,18 +227,18 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var Nombres = (nombre,'',apellido);
+  var Nombres = nombre + ' ' + apellido;
   return Nombres;
 
-}combinarNombres('Fernando','Dominguez');// "Fernando Dominguez"
+}
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var Saludo = 'Hola' + nombre;
+  var Saludo = 'Hola ' + nombre + '!';
   return Saludo;
-}obtenerSaludo('Gonzalo');// "Hola Gonzalo"
+}obtenerSaludo('Martin');// "Hola Martin!"
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
