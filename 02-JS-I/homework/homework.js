@@ -233,7 +233,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var Saludo = ('Hola','',nombre);
+  var Saludo = 'Hola' + nombre;
   return Saludo;
 }obtenerSaludo('Gonzalo');// "Hola Gonzalo"
 
